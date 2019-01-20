@@ -1,9 +1,10 @@
 from flask import *
-
+import os
+port = int(os.getenv("PORT"))
 app = Flask(__name__)
 @app.route("/")
 def index_page():
-    return "hello world"
+    return render_template("main.html")
 
 if __name__ == '__main__':
-    app.run()
+    app.run(host='0.0.0.0', port=port)
