@@ -1,5 +1,5 @@
 # flask_ui
-Basic flask web application
+Cloud foundary deployement of a basic flask web application
 
 Deploy app to cloud foundary using manifest file:
 
